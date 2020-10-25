@@ -9,6 +9,7 @@ export class AppComponent {
    name: string = '';
    payMeantDate: string = '';
    amount: number ;
+   distance: number;
    car ={
      name: 'Toyota',
      model:'camery',
@@ -24,5 +25,9 @@ export class AppComponent {
 
   onAmountChange(value: number) {
     this.amount = value
+  }
+
+  onDistanceChange(value: number) {
+     this.distance  = value;
   }
 }

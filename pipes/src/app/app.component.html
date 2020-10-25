@@ -40,4 +40,17 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="form-group col">
+      <label>Distance(Miles)</label>
+      <input type="number" class="form-control"
+             (input)=" onDistanceChange($event.target.value)"/>
+    </div>
+    <div class="col">
+      <label><b>Distance(Kilometers)</b></label>
+      <div>
+        {{ distance | convert}}
+      </div>
+    </div>
+  </div>
 </div>
