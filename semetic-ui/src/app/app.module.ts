@@ -5,18 +5,22 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {ElementesModule} from "./elementes/elementes.module";
 import {ElementsHomeComponent} from "./elementes/elements-home/elements-home.component";
+import {CollectionsModule} from "./collections/collections.module";
+import {CollectionHomeComponent} from "./collections/collection-home/collection-home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ElementesModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ElementesModule,
+    CollectionsModule
+  ],
   exports:[
-    ElementsHomeComponent
+    ElementsHomeComponent,
+    CollectionHomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
