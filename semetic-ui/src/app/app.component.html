@@ -1,4 +1,9 @@
- <app-elements-home></app-elements-home>
- <app-collection-home></app-collection-home>
- <h1>Hello angular</h1>
- <router-outlet></router-outlet>
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+    <a routerLink="/element" routerLinkActive="active" class="item">Elements</a>
+    <a routerLink="/collection" routerLinkActive="active" class="item">Collections</a>
+  </div>
+  <div class="ui segment">
+    <router-outlet></router-outlet>
+  </div>
+</div>

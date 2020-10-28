@@ -3,24 +3,20 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {ElementesModule} from "./elementes/elementes.module";
-import {ElementsHomeComponent} from "./elementes/elements-home/elements-home.component";
-import {CollectionsModule} from "./collections/collections.module";
-import {CollectionHomeComponent} from "./collections/collection-home/collection-home.component";
+import {HomeComponent} from './home/home.component';
+import {NotFoundComponent} from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ElementesModule,
-    CollectionsModule
+    AppRoutingModule
   ],
   exports:[
-    ElementsHomeComponent,
-    CollectionHomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

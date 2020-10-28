@@ -8,7 +8,6 @@ import {CollectionHomeComponent} from './collection-home/collection-home.compone
 @NgModule({
   declarations: [CollectionHomeComponent],
   exports: [
-    CollectionHomeComponent
   ],
   imports: [
     CommonModule,
