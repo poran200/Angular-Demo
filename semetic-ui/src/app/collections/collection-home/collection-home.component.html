@@ -1,3 +1,14 @@
 <h1> Table Component</h1>
 <div class="ui divider"></div>
 <app-table [data]="data" [headers]="headers" ></app-table>
+<h1> Tabs Component</h1>
+<div class="ui divider"></div>
+<app-tabs>
+  <a class="item"
+     routerLink="./"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{exact: true}"
+  >Biography</a>
+  <a class="item" routerLink="./companies" routerLinkActive="active">Companies</a>
+  <a class="item" routerLink="./partners" routerLinkActive="active">Partners</a>
+</app-tabs>
