@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren:() => import('./views/views.module')
       .then(module => module.ViewsModule)
   },
+  {path: 'mods',
+    loadChildren:() => import('./mods/mods.module')
+      .then(module => module.ModsModule)
+  },
   {path: 'collection',
     loadChildren:()=> import('./collections/collections.module')
       .then(m=> m.CollectionsModule)},

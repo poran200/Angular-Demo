@@ -1,0 +1,16 @@
+<h1>Modal</h1>
+<div class="ui divider"></div>
+<button class="ui button primary" (click)="onClick()">Show modal</button>
+<app-modal *ngIf="isModalOpen" (close)="onClick()" >
+  <div modalHeader>
+    Modal Header
+  </div>
+  <p>
+    modal description demo
+  </p>
+</app-modal>
+<h1>Accordion Component</h1>
+<div class="ui divider"></div>
+<app-accordion [data]="accordionItems">
+
+</app-accordion>

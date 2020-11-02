@@ -1,0 +1,4 @@
+<div class="container">
+  <app-scearch-bar (submitted)="onTermSubmit($event)"></app-scearch-bar>
+  <app-page-list *ngIf="searchResult.length" [data]="searchResult"></app-page-list>
+</div>
